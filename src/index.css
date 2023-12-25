@@ -1,0 +1,187 @@
+body,
+h1,
+h2,
+p,
+div,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.game-description {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #6b3b1f;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card-content {
+  width: 100%;
+  text-align: center;
+}
+
+.card-image {
+  width: 37.5rem;
+  height: 15rem;
+  object-fit: fill;
+  border-radius: 0.5rem;
+}
+
+.card-text {
+  margin-top: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.input-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.input-name input {
+  padding: 0.5rem;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+}
+
+.input-name button {
+  padding: 0.4375rem 0.625rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #966534;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.backImg {
+  background-image: url("../images/torontoPast.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.result-verdict {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.warning-message {
+  color: red;
+  margin: 0.3125rem 0;
+  font-size: 0.875rem;
+}
+
+.game-over {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin-top: 1.25rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.verdict,
+.correct,
+.wrong {
+  margin: 0.625rem 0;
+  font-size: 1.125rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+button {
+  padding: 0.4375rem 0.625rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #966534;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a87d4f;
+}
+
+.small-text {
+  font-size: 1rem;
+  color: black;
+  margin-top: 0.625rem;
+}
+
+.warning-message {
+  color: red;
+  margin: 0.3125rem 0;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: #6b3b1f;
+  font-style: italic;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0.625rem;
+  padding: 0.5rem;
+  text-shadow: 0.125rem 0.125rem 0.25rem white;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    max-width: 100%;
+    border-radius: 0; 
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+  }
+
+  .backImg {
+    background-image: none;
+  }
+}
