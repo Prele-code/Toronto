@@ -26,6 +26,7 @@ const GuessGame = () => {
     setHintVisible(false);
 
     // Set a new random image that wasn't used in the round
+
     const remainingImages = Images.filter(
       (img) => !usedImages.includes(img.src)
     );
@@ -36,6 +37,7 @@ const GuessGame = () => {
 
     const randomIndex = Math.floor(Math.random() * remainingImages.length);
     const newImage = remainingImages[randomIndex];
+    console.log("New Image:", newImage);
     setCurrentImage(newImage);
 
     // Update the list of used images
@@ -114,6 +116,7 @@ const GuessGame = () => {
   );
 
   const isGameOver = attempts >= 5;
+  console.log("Debug - currentImage.src:", currentImage.src);
 
   return (
     <div className="backImg">

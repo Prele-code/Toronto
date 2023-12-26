@@ -1,4 +1,5 @@
 const ImageCard = ({ src, description, hintVisible, setHintVisible }) => (
+  
   <div className="card-content">
     <img className="card-image" src={`./images/${src}`} alt={`Current Guess`} />
     <div className="card-text">
@@ -10,5 +11,7 @@ const ImageCard = ({ src, description, hintVisible, setHintVisible }) => (
     </div>
   </div>
 );
+
+
 
 export default ImageCard;
