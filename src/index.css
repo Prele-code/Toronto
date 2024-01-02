@@ -86,7 +86,7 @@ h1 {
 }
 
 .backImg {
-  background-image: url("../images/torontoPast.jpg");
+  background-image: url("./images/torontoPast.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -172,13 +172,13 @@ button:hover {
 @media only screen and (max-width: 600px) {
   .card-container {
     max-width: 100%;
-    border-radius: 0; 
+    border-radius: 0;
   }
 
   .card-image {
     width: 100%;
     height: auto;
-    border-radius: 0; 
+    border-radius: 0;
   }
 
   .backImg {
