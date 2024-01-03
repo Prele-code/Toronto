@@ -86,7 +86,7 @@ h1 {
 }
 
 .backImg {
-  background-image: url("./images/torontoPast.jpg");
+  background-image: url("/images/torontoPast.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
