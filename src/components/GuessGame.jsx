@@ -83,6 +83,7 @@ const Images = [
     src: "North Toronto Station.jpg",
   },
   {
+    
     name: "Oculus Pavilion",
     description: "A space-age park shelter",
     src: "Oculus Pavilion.jpg",
@@ -192,8 +193,7 @@ const GuessGame = () => {
     }
 
     const correctAnswer = correctAnswers[currentImage.src];
-    const isCorrect =
-      guesses[currentImageIndex].toLowerCase() === correctAnswer.toLowerCase();
+    const isCorrect = guesses[currentImageIndex].trim().toLowerCase() === correctAnswer.trim().toLowerCase();
 
     setAttempts(attempts + 1);
 

@@ -169,10 +169,21 @@ button:hover {
   text-shadow: 0.125rem 0.125rem 0.25rem white;
 }
 
+
 @media only screen and (max-width: 600px) {
+  .backImg {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+
   .card-container {
     max-width: 100%;
     border-radius: 0;
+    position: static;
   }
 
   .card-image {
@@ -181,7 +192,37 @@ button:hover {
     border-radius: 0;
   }
 
-  .backImg {
-    background-image: none;
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .game-over {
+    padding: 1rem;
+  }
+
+  .result-verdict {
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+  }
+
+  .small-text {
+    font-size: 0.875rem;
+  }
+
+  .warning-message {
+    font-size: 0.875rem;
+  }
+
+  .footer {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    margin: 0.3125rem;
   }
 }
