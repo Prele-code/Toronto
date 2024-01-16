@@ -2,7 +2,7 @@ const InputSection = ({ value, onChange, onKeyDown, disabled, showSubmissionWarn
   <div className="input-name">
     <input
       type="text"
-      placeholder={`Enter name...`}
+      placeholder={`Name the hidden beauty...`}
       value={value || ""}
       onChange={(e) => onChange(e.target.value)}
       onKeyDown={onKeyDown}
